@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WM -1705 JavaScript Assignment</title>
+</head>
+<!-- incomplete Q 7 CHAP 38-42 line 2019 -->
+<!-- incomplete Q 3 CHAP 49-52 line 2198 -->
+<!-- incomplete Q 2 CHAP 53-58 line 2273 -->
+
+
+<body>
+    <!-- Chapter 43-48 PDF -->
+    <!-- Question 3 -->
+    <!-- <table id="myTable">
+        <tr>
+            <td> 1</td>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td> 2</td>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td> 3</td>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+        </tr>
+    </table> -->
+
+    <!-- _____________________________________________________________________________________________________________ -->
+
+    <!-- Chapter 43-48 PDF -->
+    <!-- Question 4 -->
+    <!-- <div>
+        <a href="#" id="name">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+                alt="Mobile" width="32" height="32">
+    </div> -->
+    <!-- _____________________________________________________________________________________________________________ -->
+
+    <!-- Chapter 43-48 PDF -->
+    <!-- Question 5 -->
+    <!-- <div>
+        <button type="button" onClick="onClick()">Click me</button>
+        <p>Clicks: <a id="clicks">0</a></p>
+    </div> -->
+
+    <!-- _____________________________________________________________________________________________________________ -->
+
+    <!-- Chapter 49-52 PDF -->
+    <!-- Question 1 -->
+    <!-- <div style="text-align: center; justify-content: center; padding-top: 10em;">
+        <h1>Signup Form</h1>
+
+        <form id='sampleform' method='post' action="" onsubmit="">
+            <p>
+                Name: &nbsp; &nbsp; &nbsp; &nbsp; <input id="name" type='text' name='Name' required />
+            </p>
+            <p>
+                Email: &nbsp; &nbsp; &nbsp; &nbsp; <input id="email" type='email' name='Email' required />
+            </p>
+            <p>
+                Password: &nbsp; <input id="password" type='password' name='Password' required />
+            </p>
+            <p style="margin:2em; padding-left: 3.5em; ">
+                <input type='submit' onclick="showMessage()" id="mySubmit" name='Submit' value='Submit'
+                    target="_blank" />
+            </p>
+        </form>
+        <p id="para"></p>
+    </div> -->
+
+    <!-- _____________________________________________________________________________________________________________ -->
+
+
+    <!-- Chapter 49-52 PDF -->
+    <!-- Question 2 -->
+    <!-- <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+            lorem egestas vitae scel<span id="dots">...</span><span style="display: none;" id="more">erisque enim ligula
+                venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero
+                sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer
+                fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+        </p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+    </div> -->
+
+
+    <!-- _____________________________________________________________________________________________________________ -->
+
+    <!-- Chapter 49-52 PDF -->
+    <!-- Question 3 -->
+    <!-- <style>
+        form li {
+            list-style: none;
+            margin-bottom: 5px;
+        }
+
+        form {
+            margin-left: 20em;
+            margin-top: 5rem;
+        }
+
+        form ul li label {
+            float: left;
+            clear: left;
+            width: 100px;
+            text-align: right;
+            padding: 0 auto;
+            margin-right: 10px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        form ul li input,
+        select,
+        span {
+            float: left;
+            margin-bottom: 12px;
+        }
+
+        form textarea {
+            float: left;
+            width: 350px;
+            height: 150px;
+        }
+
+        [type="submit"] {
+            clear: left;
+            margin: 20px 0 0 230px;
+            font-size: 18px
+        }
+
+        p {
+            margin-left: 70px;
+            font-weight: bold;
+        }
+    </style>
+    <div>
+        <form name='registration' onSubmit="return formValidation();">
+            <ul>
+                <li style=""><label for="userid">User id:</label></li>
+                <li><input type="text" name="userid" size="12" required /></li>
+                <li><label for="passid">Password:</label></li>
+                <li><input type="password" name="passid" size="12" required /></li>
+                <li><label for="username">Name:</label></li>
+                <li><input type="text" name="username" size="50" required /></li>
+                <li><label for="address">Address:</label></li>
+                <li><input type="text" name="address" size="50" /></li>
+                <li><label for="country">Country:</label></li>
+                <li><select name="country" required>
+                        <option selected="" value="Default">(Please select a country) </option>
+                        <option value="PAK">Pakistan</option>
+                        <option value="AL">Canada</option>
+                        <option value="DZ">India</option>
+                        <option value="AS">Russia</option>
+                        <option value="AD">USA</option>
+                    </select></li>
+                <li><label for="zip">ZIP Code:</label></li>
+                <li><input type="text" name="zip" /></li>
+                <li><label for="email">Email:</label></li>
+                <li><input type="email" name="email" size="50" required /></li>
+                <li><label id="gender">Sex:</label></li>
+                <li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+                <li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+                <li><label>Language:</label></li>
+                <li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+                <li><input type="checkbox" name="nonen" value="noen" /><span>Non English</span></li>
+                <li><label for="desc">About:</label></li>
+                <li><textarea name="desc" id="desc"></textarea></li>
+                <li><input type="submit" name="submit" value="Submit" /></li>
+            </ul>
+        </form>
+        <p id="para"></p>
+    </div> -->
+
+    <!-- _____________________________________________________________________________________________________________ -->
+
+    <!-- Chapter 53-58 PDF -->
+    <!-- Question 1 -->
+    <!-- <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #myImg:hover {
+            opacity: 0.7;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content (image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Caption of Modal Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation */
+        .modal-content,
+        #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <img id="myImg4" src="images/others/4.png" alt="Maldives" style="width:100%;max-width:300px">
+    <img id="myImg2" src="images/others/5.jpg" alt="Glass Beach, California, USA" style="width:100%;max-width:300px">
+    <img id="myImg1" src="images/others/6.jpg" alt="Santorini, Greece" style="width:100%;max-width:300px">
+    <img id="myImg3" src="images/others/7.png" alt="Neuschwanstein Castle, Germany" style="width:100%;max-width:300px">
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption" style="text-align: center;"></div>
+    </div> -->
+
+
+    <!-- _____________________________________________________________________________________________________________ -->
+
+    <!-- Chapter 53-58 PDF -->
+    <!-- Question 2 -->
+
+    <style>
+        .box {
+            display: inline-block;
+            /* background: linear-gradient(25deg, #F13F79, #FFC778); */
+            color: black;
+            /* font-size: 25px; */
+            padding: 20px;
+            width: 700px;
+            height: 700px;
+        }
+    </style>
+    <div class="box ">
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolores perferendis natus. Quod illo
+            vero optio eaque iusto ad sint officia eum, corrupti incidunt similique amet veritatis distinctio aut
+            cupiditate! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor placeat aperiam tenetur
+            voluptate minima similique nobis beatae blanditiis reprehenderit, tempore officiis eligendi ipsam vero,
+            dolores harum accusamus perferendis, quam praesentium! </p>
+
+        <button style="text-align:center;" type="button" onclick="zoomin()">
+            Zoom-In
+        </button>
+
+        <button style="text-align:center;" type="button" onclick="zoomout()">
+            Zoom-Out
+        </button>
+    </div>
+
+
+    <!-- _____________________________________________________________________________________________________________ -->
+
+    <!-- Chapter 58-67 PDF -->
+    <!-- Question 1 & 2 -->
+    <!-- <div>
+        <h1> DOM </h1>
+        <div id="form-content" class=”content”>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for=”last-name”>Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label> <input type="text" id="email" />
+            <button onclick="myFunction()">Try it</button>
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+        <div>
+            <p id="demo"></p>
+        </div>
+    </div> -->
+
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
